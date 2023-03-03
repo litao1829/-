@@ -17,6 +17,7 @@
     background-color: #39364d;
     color:white;
     border-radius: 8px 0 0 0;
+
 } 
 .swiper{
     width: 896px;
@@ -29,4 +30,30 @@
     background-color: blue;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 5px 20px 0 rgb(0 0 0 /30%);
+}
+/* banner整体完成 */
+/* 课程分类列表开始 */
+.course-list ul{
+    margin-top: 20px;
+
+}
+.course-list li{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.course-list li:hover{
+    background: rgba(255,255, 255, .1);
+    cursor: pointer;
+}
+.course-list .title{
+    font-size: 14px;
+}
+.course-list .sub-title{
+    font-size: 12px;
+}
+.course-list .iconfont{
+    float: right;
+    font-size: 10px;
+    color: rgba(255,255, 255, .5);
 }
