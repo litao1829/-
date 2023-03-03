@@ -1,0 +1,112 @@
+/* 顶部 */
+header{
+    width: 100%;
+    height: 72px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 顶部内容框 大小 */
+.nav-box{
+    max-width: 1366px;
+    min-width: 1366px;
+    margin: 0 auto;
+}
+
+.nav-box h1{
+    width: 126px;
+    height: 72px;
+    background-image: url(../images/logo.png) ;
+    background-size: 126px 72px;
+}
+.nav-box h1 a{
+    display: block;
+    width: 126px;
+    height: 72px;
+    font-size: 0px;
+}
+
+/*课程导航的样式 */
+.item-box{
+    margin-left: 20px;
+     line-height: 72px;
+     height: 72px;
+}
+.item-box li{
+    float: left;
+    padding: 0 16px;
+}
+
+.new {
+    position: relative;
+}
+.new img{
+    width: 15px;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+}
+
+/*搜索框 */
+.search{
+    padding: 16px;
+    height: 40px;
+    line-height: 40px;
+    
+}
+
+.search div{
+    background-color: #EEEEEE;
+}
+
+.search div input{
+    background-color:#EEEEEE;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border: 0;
+    
+}
+.search .iconfont{
+    font-size: 20px;
+    color: darkcyan;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+/* 个人信息 */
+.login-area{
+    line-height: 72px;
+    height: 72px;
+}
+
+.login-area a{
+    padding: 0 10px;
+}
+
+.login-area a img{
+    width: 40px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(40%);
+}
+.login-area .shop-car{
+    position: relative;
+
+}
+.login-area .shop-car:hover{
+    color: red;
+    
+}
+.login-area .shop-car .car-number{
+ position: absolute;
+ top: -8px;
+ right: -5px;
+ text-align: center;
+ font-size: 12px;
+ color: white;
+ display: block;
+ width: 20px;
+ height: 12px;
+ line-height: 12px;
+background-color: red;
+}
