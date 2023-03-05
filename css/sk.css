@@ -11,6 +11,10 @@
     display: inline-block;
     height: 72px;
 
+    
+}
+.sk-box h3 img{
+    width: 180px;
 }
 
 .sk-box .countdown{
@@ -22,4 +26,37 @@
     height: 270px;
    width: 960px;
     background-color: aquamarine;
+ }
+
+ /* 整体布局结束 */
+
+ /* 倒计时 */
+ .countdown{
+    color:#fff;
+    text-align: center;
+ }
+ .sk-box .countdown h4{
+    margin-top: 20px;
+    font-size: 20px;
+ }
+ .sk-box .countdown .iconfont{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+ }
+
+ .sk-box .countdown p{
+    margin-top: 20px;
+
+ }
+ .timer{
+    margin-top: 20px;
+
+ }
+ .timer div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    line-height: 30px;
  }
