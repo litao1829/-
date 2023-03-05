@@ -23,6 +23,7 @@
     width: 896px;
     height: 382px;
     border-radius: 0 8px 0 0;
+    position: relative;
 }
 
 .sys-class{
@@ -56,4 +57,14 @@
     float: right;
     font-size: 10px;
     color: rgba(255,255, 255, .5);
+}
+/* 课程列表结束 */
+
+/* 轮播图开始 */
+.swiper  a{
+    display: block;
+    height: 382px   ;
+    background-image: url(../images/swiper/swiper-1.jpg);
+    background-size: cover;
+    border-radius: 0 8px 0 0;
 }
