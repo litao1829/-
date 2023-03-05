@@ -55,6 +55,40 @@ setInterval(()=>{
         let timer=null;
         //数组索引
         let i=0;
+
+
+        //找到左右切换的链接
+        const prev=document.querySelector(".prev");
+        const next=document.querySelector(".next");
+
+        var arr=document.querySelectorAll(".circle-list li");
+        console.log(arr.length);
+        for(let a=0;a<arr.length;a++)
+        {
+            const lis=arr[a];
+            lis.onclick=function()
+            {
+                for(let c=0;c<arr.length;c++)
+                {
+                    const temp=arr[c];
+                    temp.className="";
+                }
+                i=a;
+                changeImg(a);
+                lis.className="current";
+            }
+        }
+        function listchange(index)
+        {
+                    const list=arr[index];
+                    for(let c=0;c<arr.length;c++)
+                    {
+                        const temp=arr[c];
+                        temp.className="";
+                    }
+                    list.className="current";
+        }
+
         function changeImg(index){
             const obj=imgs[index];
             swiperA.style.backgroundImage=`url(${obj.path})`;
@@ -72,5 +106,26 @@ setInterval(()=>{
             }
             console.log(i);
             changeImg(i);
+            listchange(i);
         },3000);
+
+        //定义一个标志
+        let flag=true;
+        prev.onclick=function(){
+            i=i-1;
+            if(i===-1){
+                i=3;
+            }
+           listchange(i);
+            changeImg(i);
+        }
+        next.onclick=function(){
+            i=i+1;
+            if(i===4)
+            {
+                i=0;
+            }
+            listchange(i);
+            changeImg(i);
+        }
 }
