@@ -179,4 +179,30 @@ setInterval(()=>{
             countdown();
         },1000);
 
+
+
+        //滚动课程
+        const ul=document.querySelector(".sk-list ul");
+        let timer3=null;
+        let leftpx=0;
+        timer3=setInterval(()=>{
+            leftpx=--leftpx;
+            if(leftpx<-1920){
+                leftpx=0;
+            }
+            ul.style.left=leftpx+"px";
+        },10);
+
+        ul.onmouseenter=function(){
+            clearInterval(timer3);
+        };
+        ul.onmouseleave=function(){
+            timer3=setInterval(()=>{
+                leftpx=--leftpx;
+                if(leftpx<-1920){
+                    leftpx=0;
+                }
+                ul.style.left=leftpx+"px";
+            },10);
+        };
 }

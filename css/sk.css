@@ -4,7 +4,7 @@
 }
 .sk-box{
     height: 342px;
-    background: #ccc;
+ 
 
 }
 .sk-box h3{
@@ -25,7 +25,6 @@
  .sk-box .sk-list{
     height: 270px;
    width: 960px;
-    background-color: aquamarine;
  }
 
  /* 整体布局结束 */
@@ -59,4 +58,48 @@
     height: 30px;
     background-color: #333;
     line-height: 30px;
+ }
+
+ /* 滚动课程 */
+ .sk-list{
+    position: relative;
+    overflow: hidden;
+ }
+ .sk-list ul{
+    position: absolute;
+    left: 0;
+    width: 2880px;
+
+ }
+ .sk-list ul li{
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 270px;
+    margin-left: 6px;
+    background-color: #fff;
+ }
+ .sk-list ul li img{
+    width: 234px;
+ }
+ .sk-list ul li .title{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #333;
+ }
+ .sk-list ul li .difficulty{
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    font-size: 12px;
+ }
+ .sk-list ul li .price{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    color: red;
+    font-weight: 600;
+ }
+ .sk-list ul:hover{
+    cursor: pointer;
  }
