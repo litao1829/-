@@ -1,0 +1,25 @@
+/* 秒杀拼团布局 */
+#sk{
+    padding: 20px 0;
+}
+.sk-box{
+    height: 342px;
+    background: #ccc;
+
+}
+.sk-box h3{
+    display: inline-block;
+    height: 72px;
+
+}
+
+.sk-box .countdown{
+    height: 270px;
+    width: 185px;
+    background-color: #e94443;
+}
+ .sk-box .sk-list{
+    height: 270px;
+   width: 960px;
+    background-color: aquamarine;
+ }
