@@ -128,4 +128,55 @@ setInterval(()=>{
             listchange(i);
             changeImg(i);
         }
+
+
+
+
+        //倒计时
+        //获取结束时间的时间戳
+        let endtime=new Date("2023-03-05 19:51:00");
+        endtime=parseInt(endtime.getTime()/1000);
+
+
+        let timer2=null;
+
+        //获取页面的小时、分钟、秒数
+        const hourdom=document.getElementById("hour");
+        const mindom=document.getElementById("min");
+        const secdom=document.getElementById("sec");
+
+        //
+        function countdown(){
+            //获取当前的时间戳
+            let currenttime=new Date();
+            currenttime=parseInt(currenttime.getTime()/1000);
+            let second=endtime-currenttime;
+
+           if(second>=0){
+             //
+             let hour=parseInt(second/3600);
+             hour=hour>9?hour:"0"+hour;
+             let mins=parseInt((second%3600)/60);
+             mins=mins>9?mins:"0"+mins;
+             let se=parseInt((second%3600)%60);
+             se=se>9?se:"0"+se;
+                hourdom.innerText=hour;
+                mindom.innerText=mins;
+                secdom.innerText=se;
+           }else{
+                //定时器清空
+                clearInterval(timer2);
+                document.querySelector('.countdown p').innerHTML='拼团已结束';
+                hourdom.innerText="00";
+                mindom.innerText="00";
+                secdom.innerText="00";
+           }
+        }
+
+
+        //启动定时器
+        timer2=setInterval(()=>{
+            countdown();
+        },1000);
+
 }
